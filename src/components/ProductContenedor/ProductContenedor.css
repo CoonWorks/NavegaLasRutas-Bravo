@@ -1,0 +1,10 @@
+.container{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.container h2{
+    text-align:center;
+    font-size:1.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
