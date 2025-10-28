@@ -1,18 +1,29 @@
-import './NavBar.css';
+import './navbar.css';
 import logo from '../../assets/img/logo.png';
 import CarroWidget from '../CarroWidget/CarroWidget.jsx';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
     return(
         <nav className='navbar'>
-            <img src={logo} className='logo' alt="" />
+            <Link to="/">
+                <img src={logo} className='logo' alt="" />
+            </Link>
             <h2 className='titulo'>Gunpla Bragado</h2>
             <ul className='categorias'>
-                <li>High Grade</li>
-                <li>Real Grade</li>
-                <li>Master Grade</li>
-                <li>Herramientas</li>
+                <li>
+                    <Link to="/categoria/highgrade">High Grade</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/realgrade">Real Grade</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/mastergrade">Master Grade</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/herramienta">Herramientas</Link>
+                </li>
             </ul>
             <CarroWidget />
         </nav>
